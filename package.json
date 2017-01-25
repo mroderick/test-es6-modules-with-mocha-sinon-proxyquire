@@ -1,13 +1,29 @@
 {
-  "name": "test-es6-with-mocha",
+  "name": "test-es6-modules-with-mocha-sinon-proxyquire",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Running demo of testing ES6 modules using mocha, sinon, proxyquire",
+  "keywords": [
+    "ES6",
+    "ES2015",
+    "ES6 modules",
+    "ES2015 modules",
+    "modules",
+    "mocha",
+    "sinon",
+    "proxyquire",
+    "stub",
+    "link seam"
+  ],
+  "main": "",
   "scripts": {
     "test": "mocha --recursive --compilers js:babel-core/register lib"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Morgan Roderick",
+    "email": "morgan@roderick.dk",
+    "url": "http://roderick.dk"
+  },
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-preset-latest-minimal": "^1.1.2",
