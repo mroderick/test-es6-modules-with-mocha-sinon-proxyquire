@@ -11,6 +11,10 @@ $ npm install
 $ npm test
 ```
 
+## License
+
+MIT: http://mrgnrdrck.mit-license.org
+
 [babel]: https://babeljs.io
 [mocha]: https://mochajs.org
 [proxyquire]: https://github.com/thlorenz/proxyquire
