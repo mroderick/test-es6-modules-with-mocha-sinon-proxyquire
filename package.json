@@ -16,7 +16,21 @@
   ],
   "main": "",
   "scripts": {
-    "test": "mocha --recursive --compilers js:babel-core/register lib"
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
+    "test": "mocha --compilers js:babel-core/register 'lib/**/*.test.js'"
+  },
+  "nyc": {
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "lib/**/*.test.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false,
+    "instrument": false
   },
   "author": {
     "name": "Morgan Roderick",
@@ -26,8 +40,11 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.22.1",
+    "babel-plugin-istanbul": "^3.1.2",
     "babel-preset-latest-minimal": "^1.1.2",
+    "cross-env": "^3.1.4",
     "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
     "proxyquire": "^1.7.10",
     "referee": "^1.2.0",
     "sinon": "^1.17.7"
