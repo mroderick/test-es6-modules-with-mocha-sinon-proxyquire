@@ -11,6 +11,21 @@ $ npm install
 $ npm test
 ```
 
+```shell
+# use nyc to create a coverage report
+$ npm run coverage
+
+------------|----------|----------|----------|----------|----------------|
+File        |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+------------|----------|----------|----------|----------|----------------|
+All files   |       50 |      100 |       50 |       50 |                |
+ hello      |      100 |      100 |      100 |      100 |                |
+  hello.js  |      100 |      100 |      100 |      100 |                |
+ proxyquire |        0 |      100 |        0 |        0 |                |
+  hi.js     |        0 |      100 |        0 |        0 |              2 |
+------------|----------|----------|----------|----------|----------------|
+```
+
 ## License
 
 MIT: http://mrgnrdrck.mit-license.org
