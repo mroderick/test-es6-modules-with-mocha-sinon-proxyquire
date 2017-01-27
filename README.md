@@ -1,6 +1,6 @@
-# Test ES6 with Mocha, Sinon, Proxyquire
+# Test ES6 with Mocha, Istanbul, Sinon, Proxyquire
 
-This repository is a running example of how to configure a project for testing [Babel][babel] transpiled ES6 JavaScript that uses ES6 module syntax, using [Mocha][mocha], [Sinon][sinon] and [Proxyquire][proxyquire] without adding any dependency to whatever module bundler/loader is used for delivering the code to browsers.
+This repository is a running example of how to configure a project for testing [Babel][babel] transpiled ES6 JavaScript that uses ES6 module syntax, using [Mocha][mocha], [Istanbul][istanbul], [Sinon][sinon] and [Proxyquire][proxyquire] without adding any dependency to whatever module bundler/loader is used for delivering the code to browsers.
 
 ## Try it out
 
@@ -12,7 +12,7 @@ $ npm test
 ```
 
 ```shell
-# use nyc to create a coverage report
+# use nyc (Istanbul CLI) to create a coverage report
 $ npm run coverage
 
 ------------|----------|----------|----------|----------|----------------|
@@ -31,6 +31,7 @@ All files   |       50 |      100 |       50 |       50 |                |
 MIT: http://mrgnrdrck.mit-license.org
 
 [babel]: https://babeljs.io
+[istanbul]: https://istanbul.js.org
 [mocha]: https://mochajs.org
 [proxyquire]: https://github.com/thlorenz/proxyquire
 [sinon]: http://sinonjs.org
